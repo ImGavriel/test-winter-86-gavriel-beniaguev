@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+// 1. Importing the Link component for navigation
+import Link from "next/link"; 
 
 export default function Home() {
   return (
@@ -14,9 +16,15 @@ export default function Home() {
           priority
         />
         <div className={styles.intro}>
-          <h1>Student Name</h1>
+          <h1>GAVRIEL BENIAGUEV</h1>
 
-            Here your app should come....
+          <p>Here your app should come....</p>
+          
+          <Link href="/system/reviews">
+            <button style={{ padding: "10px 20px", cursor: "pointer" }}>
+              Go to Reviews
+            </button>
+          </Link>
 
         </div>
       </main>
